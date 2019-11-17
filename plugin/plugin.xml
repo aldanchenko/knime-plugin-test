@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+
+   <extension
+         point="org.knime.workbench.repository.categories">
+      <category
+            description="Category containing my nodes"
+            icon="ua/dev/knime/default.png"
+            level-id="TestNode"
+            name="TestNode"
+            path="/community/3d-e-chem"/>
+   </extension>
+
+    <extension point="org.knime.workbench.repository.nodes">
+        <node category-path="/community/3d-e-chem/TestNode" factory-class="ua.dev.knime.TestNodeFactory"/>
+    </extension>
+
+</plugin>
